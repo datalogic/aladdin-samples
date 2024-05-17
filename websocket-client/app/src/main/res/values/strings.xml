@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Aladdin Websocket Client</string>
+    <string name="default_port">8000</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/popup_layout_shape">
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="81dp"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_popup_logo_dark_small" />
+
+    <TextView
+        android:id="@+id/tv_port_add_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Change port address"
+        android:textColor="#012B49"
+        android:textSize="22dp"
+        android:layout_below="@+id/logo_iv"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_port_add_change_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_port_add_change"
+        android:gravity="center"
+        android:text="Please enter port address between 1024 and 65535."
+        android:textColor="#848484"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_port_add_change_desc"
+        android:background="@drawable/cardview_colored_border"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_port_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter port address here."
+            android:inputType="text"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:padding="10dp"
+            android:maxLines="2"
+            android:cursorVisible="false"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ok_btn"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll_input_text"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/square_button_shape"
+        android:text="Done"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

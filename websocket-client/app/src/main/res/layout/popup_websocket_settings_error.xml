@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/popup_layout_shape">
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_findme_error_illustration" />
+
+    <TextView
+        android:id="@+id/tv_port_add_change_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_iv"
+        android:gravity="center"
+        android:textColor="#848484"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ok_btn"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_port_add_change_error"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/square_button_shape"
+        android:text="Done"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

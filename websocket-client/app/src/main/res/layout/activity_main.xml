@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_gradient_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Web Socket Client"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#012B49"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:id="@+id/scroll_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/dataLogicLogo"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/text"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_connect_to_server"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_rectangle"
+                android:text="Connect to server"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_scanner_state"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_rectangle"
+                android:text="Get scanner status"
+                android:textAllCaps="false"
+                android:enabled="false"/>
+
+            <Button
+                android:id="@+id/btn_latest_barcode"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_rectangle"
+                android:text="Get latest barcode"
+                android:textAllCaps="false"
+                android:enabled="false"/>
+
+            <Button
+                android:id="@+id/btn_disconnect"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_rectangle"
+                android:text="Disconnect from server"
+                android:textAllCaps="false"
+                android:enabled="false"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/dataLogicLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_datalogic_logo" />
+
+</RelativeLayout>
