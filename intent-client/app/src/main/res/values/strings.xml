@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aladdin Intent Client</string>
+    <string name="preference_file_key">SP</string>
+    <string name="action_send_bar_code_data">COM.DATALOGIC.ALADDINAPP.INTENT.ACTION_SEND_BAR_CODE_DATA</string>
+    <string name="extra_barcode_data">COM.DATALOGIC.ALADDINAPP.EXTRA.BARCODE_DATA</string>
+    <string name="extra_barcode_code_type">COM.DATALOGIC.ALADDINAPP.EXTRA.BARCODE_CODE_TYPE</string>
+    <string name="extra_barcode_scan_time">COM.DATALOGIC.ALADDINAPP.EXTRA.BARCODE_SCAN_TIME</string>
+</resources>
